@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GBESE APP ADMIN DASHBOARD</title>
+  <link rel="stylesheet" href="indexx.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <h2>Dashboard</h2>
+    <p class="subtext">Overview of your debts, credit sales, and payment activities</p>
+
+    <div class="cards">
+      <div class="card">
+        <h4>Total Debts Owed</h4>
+        <p class="amount">₦45,231.89</p>
+
+        <span class="status up">+20.1% from last month</span>
+      </div>
+      <div class="card">
+        <h4>Credit Sales</h4>
+        <p class="amount">₦82,450.00</p>
+        <span class="status up">+12.5% from last month</span>
+      </div>
+      <div class="card">
+        <h4>Payments Received</h4>
+        <p class="amount">₦28,340.50</p>
+        <span class="status down">+8.2% from last month</span>
+      </div>
+      <div class="card">
+        <h4>Active Debtors</h4>
+        <p class="amount">127</p>
+        <span class="status neutral">4 new this month</span>
+      </div>
+
+      <div class="card">
+        <h4>Overdue Payments</h4>
+        <p class="amount">₦12,890.00</p>
+        <span class="status warning">23 invoices overdue</span>
+      </div>
+    </div>
+
+    <div class="chart-section">
+      <h3>Financial Overview</h3>
+      <p>Monthly comparison of debts, credit sales, and payments</p>
+      <div class="chart">
+        <div class="bar-group">
+          <div class="bar green" style="height:80px"></div>
+          <div class="bar red" style="height:40px"></div>
+          <div class="bar blue" style="height:25px"></div>
+          <span>Jan</span>
+
+        </div>
+        <div class="bar-group">
+          <div class="bar green" style="height:65px"></div>
+          <div class="bar red" style="height:35px"></div>
+          <div class="bar blue" style="height:20px"></div>
+          <span>Feb</span>
+        </div>
+        <div class="bar-group">
+          <div class="bar green" style="height:90px"></div>
+          <div class="bar red" style="height:45px"></div>
+          <div class="bar blue" style="height:25px"></div>
+          <span>Mar</span>
+        </div>
+        <div class="bar-group">
+          <div class="bar green" 
+
+style="height:95px"></div>
+          <div class="bar red" style="height:50px"></div>
+          <div class="bar blue" style="height:30px"></div>
+          <span>Apr</span>
+        </div>
+        <div class="bar-group">
+          <div class="bar green" style="height:100px"></div>
+          <div class="bar red" style="height:55px"></div>
+          <div class="bar blue" style="height:35px"></div>
+          <span>May</span>
+        </div>
+        <div class="bar-group">
+          <div class="bar green" style="height:105px"></div>
+          <div class="bar red" style="height:60px"></div>
+
+          <div class="bar blue" style="height:40px"></div>
+          <span>Jun</span>
+        </div>
+      </div>
+      <div class="legend">
+        <span class="dot green"></span> Credit Sales
+        <span class="dot red"></span> Debts Owed
+        <span class="dot blue"></span> Payments
+      </div>
+    </div>
+
+    <div class="quick-actions">
+      <h3>Quick Actions</h3>
+      <p>Common tasks and shortcuts</p>
+      <div class="actions">
+        <button>+ New Invoice</button>
+        <button>Record Payment</button>
+
+        <button>Send Reminder</button>
+        <button>Export Report</button>
+      </div>
+    </div>
+
+    <div class="transactions">
+      <h3>Recent Transactions</h3>
+      <p>Latest activities in your account</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Customer</th>
+            <th>Type</th>
+            <th>Amount</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Acme Corp</td>
+            <td>Payment</td>
+
+            <td>₦1,250.00</td>
+            <td><span class="badge completed">completed</span></td>
+          </tr>
+          <tr>
+            <td>TechStart Inc</td>
+            <td>Credit Sale</td>
+            <td>₦3,450.00</td>
+            <td><span class="badge pending">pending</span></td>
+          </tr>
+          <tr>
+            <td>BuildCo Ltd</td>
+            <td>Payment</td>
+            <td>₦890.50</td>
+            <td><span class="badge completed">completed</span></td>
+          </tr>
+          <tr>
+            <td>RetailHub</td>
+            <td>Credit Sale</td>
+
+            <td>₦5,200.00</td>
+            <td><span class="badge overdue">overdue</span></td>
+          </tr>
+          <tr>
+            <td>FreshMart</td>
+            <td>Payment</td>
+            <td>₦2,100.00</td>
+            <td><span class="badge completed">completed</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="upcoming">
+      <h3>Upcoming Payments</h3>
+      <p>Payments due in the next 30 days</p>
+
+      <div class="payment">
+        <div>
+
+          <h4>SmartTech Co <span class="tag medium">medium</span></h4>
+          <p>Nov 8, 2025 · 7 days left</p>
+        </div>
+        <span class="amt">₦2,300.00</span>
+      </div>
+
+      <div class="payment">
+        <div>
+          <h4>Office Supplies Plus <span class="tag low">low</span></h4>
+          <p>Nov 12, 2025 · 15 days left</p>
+        </div>
+        <span class="amt">₦890.00</span>
+      </div>
+
+      <div class="payment">
+        <div>
+          <h4>Digital Marketing Ltd <span class="tag high">high</span></h4>
+          <p>Nov 15, 2025 · 14 days left</p>
+
+        </div>
+        <span class="amt">₦6,750.00</span>
+      </div>
+
+      <div class="payment">
+        <div>
+          <h4>Green Energy Inc <span class="tag low">low</span></h4>
+          <p>Nov 20, 2025 · 19 days left</p>
+        </div>
+        <span class="amt">₦1,200.00</span>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
