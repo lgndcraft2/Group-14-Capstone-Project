@@ -1,0 +1,235 @@
+body {
+    background: #f4f1f1;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+  }
+  
+  .dashboard {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    width: 900px;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .subtext {
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  
+  .card {
+    background: #fdfdfd;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .card h4 {
+  
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .amount {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 6px 0;
+  }
+  
+  .status {
+    font-size: 12px;
+    color: #888;
+  }
+  
+  .status.up { color: #16a34a; }
+  .status.down { color: #2563eb; }
+  .status.warning { color: #dc2626; }
+  .status.neutral { color: #6b7280; }
+  
+  /* Chart Section */
+  
+  .chart-section {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .chart {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 250px;
+    margin-top: 15px;
+    padding: 0 20px;
+  }
+  
+  .bar-group {
+    text-align: center;
+  }
+  
+  .bar {
+    width: 12px;
+    border-radius: 4px;
+    margin: 2px auto;
+  }
+  
+  .bar.green { background: #22c55e; }
+  .bar.red { background: #ef4444; }
+  .bar.blue { background: #3b82f6; }
+  
+  .bar-group span {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  .legend {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #555;
+    display: flex;
+    gap: 15px;
+  
+    justify-content: center;
+  }
+  
+  .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  .dot.green { background: #22c55e; }
+  .dot.red { background: #ef4444; }
+  .dot.blue { background: #3b82f6; }
+  
+  /* Quick Actions */
+  .quick-actions {
+    margin-bottom: 30px;
+  }
+  
+  .actions {
+  
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .actions button {
+    border: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #f3f4f6;
+    cursor: pointer;
+    transition: 0.2s;
+  }
+  
+  .actions button:hover {
+    background: #e5e7eb;
+  }
+  
+  /* Transactions */
+  .transactions {
+  
+    margin-bottom: 30px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+  }
+  
+  th {
+    color: #666;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  tr:nth-child(even) {
+  
+    background: #fafafa;
+  }
+  
+  .badge {
+    padding: 4px 8px;
+    border-radius: 8px;
+    font-size: 12px;
+    text-transform: lowercase;
+  }
+  
+  .badge.completed { background: #e0fce0; color: #16a34a; }
+  .badge.pending { background: #e0f0ff; color: #2563eb; }
+  .badge.overdue { background: #fee2e2; color: #dc2626; }
+  
+  /* Upcoming Payments */
+  .upcoming .payment {
+    display: flex;
+    justify-content: space-between;
+  
+    align-items: center;
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+  }
+  
+  .upcoming h4 {
+    font-size: 15px;
+    font-weight: 600;
+  }
+  
+  .upcoming p {
+    font-size: 13px;
+    color: #777;
+  }
+  
+  .tag {
+    font-size: 11px;
+    padding: 3px 6px;
+    border-radius: 6px;
+  
+    color: white;
+    margin-left: 4px;
+  }
+  
+  .tag.low { background: #10b981; }
+  .tag.medium { background: #facc15; color: #222; }
+  .tag.high { background: #ef4444; }
+  
+  .amt {
+    font-weight: bold;
+    color: #111;
+  }
+  
+  @media (max-width: 600px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+    .chart {
+      flex-wrap: wrap;
+      height: auto;
+    }
+}
