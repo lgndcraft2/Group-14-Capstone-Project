@@ -34,24 +34,29 @@ getStats = async () => {
     if (response.ok) {
       if (data.statistics.totalDebtOwed === null) {
         totalDebtsOwedElem.textContent = '₦0.00';
+      }else{
+        totalDebtsOwedElem.textContent = `₦${data.statistics.totalDebtOwed}`;
       }
       if (data.statistics.creditSales === null) {
         creditSalesElem.textContent = '₦0.00';
+      } else{
+        creditSalesElem.textContent = `₦${data.statistics.creditSales}`;
       }
       if (data.statistics.paymentReceived === null) {
         paymentsReceivedElem.textContent = '₦0.00';
+      } else{
+        paymentsReceivedElem.textContent = `₦${data.statistics.paymentReceived}`;
       }
       if (data.statistics.activeDebtors === null) {
         activeDebtorsElem.textContent = '₦0.00';
+      } else{
+        activeDebtorsElem.textContent = data.statistics.activeDebtors;
       }
       if (data.statistics.overduePayments === null) {
         overduePaymentsElem.textContent = '₦0.00';
+      } else{
+        overduePaymentsElem.textContent = `₦${data.statistics.overduePayments}`;
       }
-      totalDebtsOwedElem.textContent = `₦${data.statistics.totalDebtOwed}`;
-      creditSalesElem.textContent = `₦${data.statistics.creditSales}`;
-      paymentsReceivedElem.textContent = `₦${data.statistics.paymentReceived}`;
-      activeDebtorsElem.textContent = data.statistics.activeDebtors;
-      overduePaymentsElem.textContent = `₦${data.statistics.overduePayments}`;
     } else {
       console.error("Failed to fetch stats:", data.message);
     }
