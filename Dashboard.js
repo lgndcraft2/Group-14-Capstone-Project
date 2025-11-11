@@ -32,6 +32,21 @@ getStats = async () => {
     );
     const data = await response.json();
     if (response.ok) {
+      if (data.statistics.totalDebtOwed === null) {
+        totalDebtsOwedElem.textContent = '₦0.00';
+      }
+      if (data.statistics.creditSales === null) {
+        creditSalesElem.textContent = '₦0.00';
+      }
+      if (data.statistics.paymentReceived === null) {
+        paymentsReceivedElem.textContent = '₦0.00';
+      }
+      if (data.statistics.activeDebtors === null) {
+        activeDebtorsElem.textContent = '₦0.00';
+      }
+      if (data.statistics.overduePayments === null) {
+        overduePaymentsElem.textContent = '₦0.00';
+      }
       totalDebtsOwedElem.textContent = `₦${data.statistics.totalDebtOwed}`;
       creditSalesElem.textContent = `₦${data.statistics.creditSales}`;
       paymentsReceivedElem.textContent = `₦${data.statistics.paymentReceived}`;
